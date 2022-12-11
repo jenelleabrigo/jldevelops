@@ -2,7 +2,11 @@
   &__table {
     width: 100%;
     table-layout: fixed;
-    border-spacing: 2rem 3rem;
+    border-spacing: 2rem;
+
+    @include mq_sp {
+      border-spacing: 0 1rem;
+    }
 
     &__row {
       width: 100%;
@@ -16,7 +20,7 @@
 
         &.with-mb {
           @include mq_sp {
-            margin-bottom: 0;
+            margin-bottom: 1rem;
           }
         }
       }
@@ -48,12 +52,18 @@
     border-radius: 1.3rem;
     border: none;
 
+    @include mq_sp {
+      padding: 1.5rem 1rem;
+      border-radius: 0.5rem;
+    }
+
     &:focus {
       outline: 1px solid $primary;
     }
 
     &::placeholder {
       opacity: 0.7;
+      font-size: 1.6rem;
     }
   }
 
@@ -65,6 +75,10 @@
     border: 1px solid $primary;
     border-radius: 1.3rem;
     color: #fff;
+
+    @include mq_sp {
+      border-radius: 0.5rem;
+    }
 
     &::after {
       display: none;

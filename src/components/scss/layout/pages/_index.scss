@@ -14,7 +14,9 @@
     position: relative;
 
     @include mq_sp {
-      padding: 3rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       background: url("../../assets/index/sp_bg-main-visual.jpg") no-repeat center center;
       background-size: cover;
       background-attachment: fixed;
@@ -44,7 +46,6 @@
       @include mq_sp {
         position: static;
         text-align: center;
-        padding: 0 2px;
       }
 
       &1 {
@@ -56,7 +57,7 @@
         @include mq_sp {
           font-size: 3rem;
           line-height: 1;
-          margin-bottom: 3rem;
+          margin-bottom: 6rem;
         }
 
         &__span1 {
@@ -79,12 +80,17 @@
         line-height: 1.5;
         margin-bottom: 20px;
 
+        @include mq_sp {
+          font-size: 1.4rem;
+          margin-bottom: 7rem;
+        }
+
         &__span {
           color: $primary;
           font-size: 30px;
 
           @include mq_sp {
-            font-size: 2.5rem;
+            font-size: 2.3rem;
             display: inline-block;
             letter-spacing: -1px;
           }

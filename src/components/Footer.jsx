@@ -34,9 +34,9 @@ const Footer = () => {
               <a href="tel:09302983017" className="l-footer__icon-container__icon">
                 <img src={tel} alt="phone" />
               </a>
-              <a href="/contact" className="l-footer__icon-container__icon">
+              <Link to="/contact" className="l-footer__icon-container__icon" onClick={() => window.scrollTo(0, 0)}>
                 <img src={mail} alt="mail" />
-              </a>
+              </Link>
               <a href="https://web.facebook.com/jenelleloise/" target="_blank" className="l-footer__icon-container__icon">
                 <img src={fb} alt="fb" />
               </a>

@@ -9,6 +9,11 @@ const Header = () => {
   const [toggle, setToggle] = useState(false);
   const location = useLocation();
 
+  const scrollToTopLink = () => {
+    setToggle((prev) => !prev);
+    window.scrollTo(0, 0);
+  };
+
   return (
     <>
       <div className="l-header">
@@ -19,15 +24,8 @@ const Header = () => {
             </NavHashLink>
           </h1>
 
-          <nav className="l-nav">
-            <a href="tel:09302983017" className="l-nav__content__contact u-sp-only">
-              <img src={tel} alt="phone" />
-            </a>
-            <NavLink to="/contact" className="l-nav__content__contact u-sp-only">
-              <img src={mail} alt="mail" />
-            </NavLink>
-
-            <p className={`u-sp-only l-nav__trigger ${toggle ? "is-show-nav" : ""}`} onClick={() => setToggle((prev) => !prev)}>
+          <nav className={`l-nav ${toggle ? "is-show-nav" : ""}`}>
+            <p className={`u-sp-only l-nav__trigger`} onClick={() => setToggle((prev) => !prev)}>
               <button className="l-nav__trigger__button">
                 <span className="l-nav__trigger__line"></span>
                 <span className="l-nav__trigger__line"></span>
@@ -35,63 +33,42 @@ const Header = () => {
               </button>
             </p>
 
-            <div className="">
-              <ul className="l-nav__content u-pc-only">
-                <li className="l-nav__content__menu">
-                  <HashLink smooth to="/#" className={`l-nav__content__menu__anchor u-font-serif ${location.pathname == "/" && location.hash == "" ? "active" : ""}`}>
-                    Home
-                  </HashLink>
-                </li>
-                <li className="l-nav__content__menu">
-                  <HashLink smooth to="/#works" className={`l-nav__content__menu__anchor u-font-serif ${location.hash == "#works" ? "active" : ""}`}>
-                    Works
-                  </HashLink>
-                </li>
-                <li className="l-nav__content__menu">
-                  <HashLink smooth to="/#journey" className={`l-nav__content__menu__anchor u-font-serif ${location.hash == "#journey" ? "active" : ""}`}>
-                    Journey
-                  </HashLink>
-                </li>
-                <li className="l-nav__content__menu">
-                  <a href="/about" className="l-nav__content__menu__anchor u-font-serif">
-                    About Me
-                  </a>
-                </li>
-              </ul>
-            </div>
+            <ul className="l-nav__content">
+              <li className="l-nav__content__menu">
+                <HashLink
+                  smooth
+                  to="/#"
+                  onClick={() => setToggle((prev) => !prev)}
+                  className={`l-nav__content__menu__anchor u-font-serif ${location.pathname == "/" && location.hash == "" ? "active" : ""}`}
+                >
+                  Home
+                </HashLink>
+              </li>
+              <li className="l-nav__content__menu">
+                <HashLink smooth to="/#works" onClick={() => setToggle((prev) => !prev)} className={`l-nav__content__menu__anchor u-font-serif ${location.hash == "#works" ? "active" : ""}`}>
+                  Works
+                </HashLink>
+              </li>
+              <li className="l-nav__content__menu">
+                <HashLink smooth to="/#journey" onClick={() => setToggle((prev) => !prev)} className={`l-nav__content__menu__anchor u-font-serif ${location.hash == "#journey" ? "active" : ""}`}>
+                  Journey
+                </HashLink>
+              </li>
+              <li className="l-nav__content__menu">
+                <NavLink to="/about" onClick={scrollToTopLink} className="l-nav__content__menu__anchor u-font-serif">
+                  About Me
+                </NavLink>
+              </li>
+            </ul>
 
-            <a href="tel:09302983017" className="l-nav__content__contact u-pc-only">
+            <a href="tel:09302983017" className="l-nav__content__contact ">
               <img src={tel} alt="phone" />
             </a>
-            <a href="/contact" className="l-nav__content__contact u-pc-only">
+            <NavLink to="/contact" className="l-nav__content__contact " onClick={scrollToTopLink}>
               <img src={mail} alt="mail" />
-            </a>
+            </NavLink>
           </nav>
         </div>
-      </div>
-      <div className={`${toggle ? "is-show-nav" : ""}`}>
-        <ul className="l-nav__content u-sp-only">
-          <li className="l-nav__content__menu">
-            <NavHashLink smooth to="/" className="l-nav__content__menu__anchor is-home u-font-serif">
-              Home
-            </NavHashLink>
-          </li>
-          <li className="l-nav__content__menu">
-            <HashLink smooth to="/#works" className="l-nav__content__menu__anchor u-font-serif">
-              Works
-            </HashLink>
-          </li>
-          <li className="l-nav__content__menu">
-            <HashLink smooth to="/#journey" className="l-nav__content__menu__anchor u-font-serif">
-              Journey
-            </HashLink>
-          </li>
-          <li className="l-nav__content__menu">
-            <NavLink to="/about" className="l-nav__content__menu__anchor u-font-serif">
-              About Me
-            </NavLink>
-          </li>
-        </ul>
       </div>
     </>
   );

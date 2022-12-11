@@ -7,6 +7,8 @@ import sass from "../assets/common/techstack/sass.png";
 import js from "../assets/common/techstack/js.png";
 import jquery from "../assets/common/techstack/jquery.png";
 import react from "../assets/common/techstack/react.png";
+import firebase from "../assets/common/techstack/firebase.png";
+import redux from "../assets/common/techstack/redux.png";
 import wordpress from "../assets/common/techstack/wordpress.png";
 import php from "../assets/common/techstack/php.png";
 import tailwind from "../assets/common/techstack/tailwind.png";
@@ -50,6 +52,10 @@ export const projects = [
       {
         name: "sass",
         icon: sass,
+      },
+      {
+        name: "firebase",
+        icon: firebase,
       },
     ],
     slides: [netflix_landing, netflix_sign_up, netflix_sign_in, netflix_home, netflix_feature, netflix_trailer],
