@@ -10,7 +10,7 @@ const Header = () => {
   const location = useLocation();
 
   const scrollToTopLink = () => {
-    setToggle((prev) => !prev);
+    setToggle(false);
     window.scrollTo(0, 0);
   };
 
@@ -19,7 +19,7 @@ const Header = () => {
       <div className="l-header">
         <div className="l-header__inner">
           <h1 className="l-header__logo">
-            <NavHashLink smooth to="/#" onClick={() => window.scrollTo(0, 0)}>
+            <NavHashLink smooth to="/#" onClick={scrollToTopLink}>
               <img src={logo} alt="" />
             </NavHashLink>
           </h1>
@@ -64,7 +64,7 @@ const Header = () => {
             <a href="tel:09302983017" className="l-nav__content__contact ">
               <img src={tel} alt="phone" />
             </a>
-            <NavLink to="/contact" className="l-nav__content__contact " onClick={() => window.scrollTo(0, 0)}>
+            <NavLink to="/contact" className="l-nav__content__contact " onClick={scrollToTopLink}>
               <img src={mail} alt="mail" />
             </NavLink>
           </nav>
