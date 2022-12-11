@@ -1,0 +1,100 @@
+.c-form {
+  &__table {
+    width: 100%;
+    table-layout: fixed;
+    border-spacing: 2rem 3rem;
+
+    &__row {
+      width: 100%;
+
+      &__td {
+        width: 100%;
+
+        @include mq_sp {
+          display: block;
+        }
+
+        &.with-mb {
+          @include mq_sp {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      &:first-child &__td input {
+        background: rgba(199, 139, 153, 0.2);
+      }
+
+      &:nth-child(2) &__td input {
+        background: rgba(199, 139, 153, 0.4);
+      }
+
+      &:nth-child(3) &__td input {
+        background: rgba(199, 139, 153, 0.6);
+      }
+
+      &:last-child &__td textarea {
+        background: rgba(199, 139, 153, 0.8);
+      }
+    }
+  }
+
+  &__input,
+  &__textarea {
+    color: inherit;
+    font-size: 2rem;
+    padding: 2rem;
+    width: 100%;
+    border-radius: 1.3rem;
+    border: none;
+
+    &:focus {
+      outline: 1px solid $primary;
+    }
+
+    &::placeholder {
+      opacity: 0.7;
+    }
+  }
+
+  &__send {
+    background: $primary;
+    appearance: none;
+    margin: 3rem auto;
+    cursor: pointer;
+    border: 1px solid $primary;
+    border-radius: 1.3rem;
+    color: #fff;
+
+    &::after {
+      display: none;
+    }
+
+    &:hover {
+      background: $secondary;
+      border: 1px solid $secondary;
+    }
+  }
+}
+
+//CONTACT FORM 7
+.wpcf7-spinner {
+  left: 50%;
+  transform: translateX(-50%);
+  margin: auto !important;
+}
+
+.wpcf7-not-valid-tip {
+  font-size: 1.8rem !important;
+  position: absolute;
+}
+
+.wpcf7-response-output {
+  border: none !important;
+  color: red !important;
+  text-align: center !important;
+}
+
+.wpcf7-form.sent .wpcf7-response-output {
+  color: $secondary !important;
+}

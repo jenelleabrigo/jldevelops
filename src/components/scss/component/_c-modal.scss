@@ -1,0 +1,149 @@
+.c-modal {
+  top: 0;
+  left: 0;
+  z-index: 100;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: rgba(112, 112, 112, 0.9);
+
+  &.is-show {
+    display: block;
+  }
+
+  &__content {
+    text-align: center;
+    overflow: auto;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    background: #fff;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 6rem;
+
+    @include mq_sp {
+      width: 90%;
+      padding: 10px 15px;
+    }
+
+    &__title {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    &__techstack {
+      margin-bottom: 0.5rem;
+
+      &__logo {
+        height: 3rem;
+        width: 3rem;
+        border: 1px solid $secondary;
+        border-radius: 100%;
+        border-radius: 100%;
+        object-fit: contain;
+
+        &:not(:last-child) {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+
+    &__link {
+      color: inherit;
+      margin-top: 2rem;
+      display: inline-block;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+
+    &__text {
+      margin: 5rem auto;
+      text-align: left;
+    }
+
+    &__slide {
+      position: relative;
+    }
+  }
+
+  &__close {
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    &::after {
+      position: absolute;
+      content: "X";
+      font-size: 2.5rem;
+      height: 5rem;
+      color: #fff;
+      top: 5%;
+      right: 5%;
+      cursor: pointer;
+    }
+
+    @include mq_sp {
+      font-size: 2rem;
+    }
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: auto;
+
+  &-sllide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    padding: 0 8rem;
+
+    @include mq_sp {
+      padding: 0;
+    }
+  }
+
+  &-button-next,
+  &-button-prev {
+    height: 3rem;
+    width: 3rem;
+    background: #fff;
+    border-radius: 100%;
+
+    @include mq_sp {
+      height: 2rem;
+      width: 2rem;
+      top: 60%;
+    }
+  }
+
+  &-button-next::after,
+  &-button-prev::after {
+    color: $primary;
+    font-size: 2rem;
+
+    @include mq_sp {
+      font-size: 1rem;
+    }
+  }
+
+  &-pagination-bullet {
+    background-color: #fff;
+    opacity: 0.8;
+
+    &-active {
+      background-color: $primary;
+      opacity: 1;
+    }
+  }
+}

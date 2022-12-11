@@ -1,0 +1,49 @@
+.u-flex {
+  display: flex;
+}
+
+.u-flex-align-items-center {
+    align-items: center;
+}
+
+.u-flex-justify-content-space-beteen {
+    justify-content: space-between;
+}
+
+//PC ONLY
+.u-pc-flex {
+    @include mq_pc {
+        display: flex;
+    }
+}
+
+.u-pc-flex-align-items-center {
+    @include mq_pc {
+        align-items: center;
+    }
+}
+
+.u-pc-flex-justify-content-space-beteen {
+    @include mq_pc {
+        justify-content: space-between;
+    }
+}
+
+//SP ONLY
+.u-sp-flex {
+    @include mq_sp {
+        display: flex;
+    }
+}
+
+.u-sp-flex-align-items-center {
+    @include mq_sp {
+        align-items: center;
+    }
+}
+
+.u-sp-flex-justify-content-space-beteen {
+    @include mq_sp {
+        justify-content: space-between;
+    }
+}

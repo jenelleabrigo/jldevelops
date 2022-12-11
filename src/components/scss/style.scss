@@ -1,0 +1,31 @@
+/* BASE STYLE */
+@import "./base/variables"; //always import files with variables before files where variables are called
+@import "./base/reset";
+
+/* BASE STYLE: MIXINS */
+@import "./base/mixins/media-query";
+
+/* BASE STYLE: UTILITY */
+@import "./base/utility/typography";
+@import "./base/utility/flex";
+@import "./base/utility/fonts";
+@import "./base/utility/layout";
+@import "./base/utility/only";
+
+/* COMPONENT STYLE */
+@import "./component/c-button";
+@import "./component/c-headline";
+@import "./component/c-form";
+@import "./component/c-modal";
+
+/* LAYOUT STYLE */
+@import "./layout/footer";
+@import "./layout/header";
+@import "./layout/main";
+@import "./layout/nav";
+
+/* LAYOUT STYLE: PAGES */
+@import "./layout/pages/not-found";
+@import "./layout/pages/index";
+@import "./layout/pages/about";
+@import "./layout/pages/contact";

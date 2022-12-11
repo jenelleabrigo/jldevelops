@@ -1,0 +1,18 @@
+.c-headline {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+
+  @include mq_sp {
+    font-size: 3.5rem;
+  }
+
+  &.is-pink {
+    color: $primary;
+  }
+
+  &.is-white {
+    color: #fff;
+  }
+}

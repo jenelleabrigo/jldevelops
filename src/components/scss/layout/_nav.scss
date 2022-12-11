@@ -1,0 +1,159 @@
+.l-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__trigger {
+    &__button {
+      height: 2.5rem;
+      width: 3rem;
+      border-radius: 0;
+      border: none;
+      background: none;
+      position: relative;
+      top: -2px;
+    }
+
+    &__line {
+      position: absolute;
+      height: 0.3rem;
+      width: 100%;
+      display: block;
+      background: #000;
+      transition: 0.3s;
+
+      &:nth-child(1) {
+        top: 0;
+      }
+
+      &:nth-child(2) {
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      &:nth-child(3) {
+        bottom: 0.1rem;
+      }
+    }
+
+    .is-show-nav & {
+      &__line {
+        &:nth-child(1) {
+          top: 1rem;
+          transform: rotate(45deg);
+        }
+
+        &:nth-child(2) {
+          top: 1rem;
+          display: none;
+        }
+
+        &:nth-child(3) {
+          top: 1rem;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    width: 100%;
+    padding-right: 2rem;
+
+    @include mq_sp {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      bottom: 100%;
+      transition: 0.3s;
+      background: #fff;
+      text-align: center;
+      overflow: auto;
+      z-index: 98;
+      padding: 11rem 0 0 0;
+    }
+
+    &__menu {
+      width: auto;
+      padding-right: 2rem;
+
+      @include mq_sp {
+        width: 100%;
+        display: block;
+        margin-bottom: 3rem;
+        padding-right: 0;
+      }
+
+      &__anchor {
+        font-weight: 2rem;
+        text-decoration: none;
+        color: inherit;
+
+        @include mq_sp {
+          font-weight: 2.5rem;
+        }
+
+        &.is-active {
+          color: #fff;
+          position: relative;
+
+          @include mq_sp {
+            color: $primary;
+          }
+        }
+
+        &:hover,
+        &.active {
+          position: relative;
+
+          &::after {
+            position: absolute;
+            content: "";
+            height: 12.5px;
+            width: 16px;
+            background: url("../../assets/common/arrow-up-white.svg") no-repeat;
+            background-size: contain;
+            left: 0;
+            right: 0;
+            bottom: -15px;
+            margin: auto;
+          }
+        }
+      }
+    }
+
+    .is-show-nav & {
+      bottom: 0;
+    }
+
+    &__contact {
+      font-size: 2rem;
+      font-weight: bold;
+      text-decoration: none;
+      background: #fff;
+      border-radius: 4rem;
+      border: 1px dashed $secondary;
+      padding: 0.3rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+
+      & > img {
+        height: 1.5rem;
+        position: relative;
+      }
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}

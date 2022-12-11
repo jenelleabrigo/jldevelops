@@ -1,0 +1,41 @@
+.p-not-found {
+  padding-top: 65px;
+  text-align: center;
+
+  &__content {
+    padding: 8rem 0 11rem;
+
+    &__heading {
+      font-size: 4rem;
+      font-weight: bold;
+      line-height: 1.2;
+      margin-bottom: 3rem;
+      color: $primary;
+      position: relative;
+      padding-top: 4rem;
+
+      &::before {
+        position: absolute;
+        content: "";
+        height: 6rem;
+        width: 6rem;
+        background: url("../../assets/common/error-404.png") no-repeat;
+        background-size: contain;
+        top: -2rem;
+        right: 0;
+        left: 0;
+        margin: auto;
+      }
+    }
+
+    &__txt {
+      font-size: 2rem;
+      line-height: 1.5;
+      margin-bottom: 3rem;
+    }
+
+    &__btn {
+      margin: auto;
+    }
+  }
+}

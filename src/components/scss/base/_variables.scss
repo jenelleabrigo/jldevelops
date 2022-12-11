@@ -1,0 +1,19 @@
+//PC
+
+$pc-layout-width: 1170;
+$pc-margin: 2rem;
+$pc-min-width: calc(#{$pc-layout-width}px + #{$pc-margin * 2});
+
+// SmartPhone
+$sp-width: 375;
+$sp-width-breakpoint: $sp-width * 2;
+$sp-margin: 2rem;
+
+//default
+$font-default: "Noto Sans", sans-serif;
+$color-default: #707070;
+$font-size-default: 16px;
+
+//color
+$primary: #c78b99;
+$secondary: #707070;

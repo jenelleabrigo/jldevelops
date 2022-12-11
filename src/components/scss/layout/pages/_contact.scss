@@ -1,0 +1,31 @@
+.p-contact {
+  padding-top: 65px;
+
+  &__inner {
+    padding: 7rem 0;
+
+    @include mq_sp {
+      padding: 3rem 0 7rem;
+    }
+
+    &__title {
+      font-size: 3rem;
+      font-weight: bold;
+      color: $secondary;
+      margin-bottom: 3rem;
+    }
+
+    &__status {
+      text-align: center;
+      margin: 3rem;
+
+      &.is-success {
+        color: #1ecd1e;
+      }
+
+      &.is-fail {
+        color: #cd1e1e;
+      }
+    }
+  }
+}

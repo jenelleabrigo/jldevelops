@@ -1,0 +1,168 @@
+.l-footer {
+  position: relative;
+  background: url("../../assets/common/bg-footer.png") no-repeat;
+  background-size: cover;
+  background-position: center 12px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 35px 0 0;
+  margin-top: -100px;
+
+  &__scroll {
+    position: fixed;
+    bottom: 20px;
+    right: -20px;
+    height: 20px;
+    width: 90px;
+    transform: rotate(-90deg);
+    transition: 0.3s;
+    // opacity: 0;
+    z-index: 1;
+
+    &.is-show {
+      opacity: 1;
+    }
+
+    &__anchor {
+      display: block;
+      text-decoration: none;
+      color: $secondary;
+      font-size: 2rem;
+      font-weight: bold;
+      position: relative;
+
+      @include mq_sp {
+        font-size: 12px;
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        height: 12.5px;
+        width: 16px;
+        background: url("../../assets/common/arrow-up-white.svg") no-repeat;
+        background-size: contain;
+        top: 0;
+        bottom: 0;
+        right: 5px;
+        margin: auto;
+        transform: rotate(90deg);
+
+        @include mq_sp {
+          height: 8.5px;
+          width: 12px;
+          right: 12px;
+        }
+      }
+    }
+  }
+
+  &__codepen {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: inline-block;
+    z-index: 1;
+    // opacity: 0;
+    transition: 0.3s;
+
+    &.is-show {
+      opacity: 1;
+    }
+
+    &__icon {
+      display: inline-block;
+      box-shadow: 0 0 10px $secondary;
+      position: relative;
+
+      > img {
+        height: 35px;
+        width: auto;
+
+        @include mq_sp {
+          height: 28px;
+        }
+      }
+
+      &::after {
+        position: absolute;
+        content: "View more work!";
+        height: 2rem;
+        width: max-content;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        left: 0;
+        color: $secondary;
+        transition: 0.3s;
+        font-size: 13px;
+        opacity: 0;
+      }
+
+      &:hover::after {
+        opacity: 1;
+        left: 4rem;
+
+        @include mq_sp {
+          left: 3rem;
+        }
+      }
+    }
+  }
+
+  &__logo {
+    margin-bottom: 40px;
+
+    &__anchor {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+
+  &__icon-container {
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 40px;
+
+    &__icon {
+      position: relative;
+
+      &:hover {
+        opacity: 0.9;
+
+        &::after {
+          position: absolute;
+          content: "";
+          height: 10px;
+          width: 16px;
+          background: url("../../assets/common/arrow-up-pink.svg") no-repeat;
+          background-size: contain;
+          bottom: -20px;
+          left: 0;
+          right: 0;
+          margin: auto;
+        }
+      }
+
+      & > img {
+        height: 2.5rem;
+        width: 2.5rem;
+      }
+    }
+  }
+
+  &__copyright {
+    position: relative;
+    text-align: center;
+    padding: 7.5px 0;
+    background: $primary;
+  }
+}
+
+.disclaimer {
+  display: none !important;
+}
