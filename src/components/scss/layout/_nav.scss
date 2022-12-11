@@ -4,11 +4,6 @@
   justify-content: space-between;
 
   &__trigger {
-    @include mq_sp {
-      order: 3;
-      padding-left: 1.5rem;
-    }
-
     &__button {
       height: 2.5rem;
       width: 3rem;
@@ -41,21 +36,26 @@
       }
     }
 
-    .is-show-nav & {
-      &__line {
-        &:nth-child(1) {
-          top: 1rem;
-          transform: rotate(45deg);
-        }
+    @include mq_sp {
+      order: 3;
+      padding-left: 1.5rem;
 
-        &:nth-child(2) {
-          top: 1rem;
-          display: none;
-        }
+      .is-show-nav & {
+        &__line {
+          &:nth-child(1) {
+            top: 1rem;
+            transform: rotate(45deg);
+          }
 
-        &:nth-child(3) {
-          top: 1rem;
-          transform: rotate(-45deg);
+          &:nth-child(2) {
+            top: 1rem;
+            display: none;
+          }
+
+          &:nth-child(3) {
+            top: 1rem;
+            transform: rotate(-45deg);
+          }
         }
       }
     }
@@ -135,8 +135,10 @@
     }
 
     .is-show-nav & {
-      height: 100%;
-      padding: 5rem 0;
+      @include mq_sp {
+        height: 100%;
+        padding: 5rem 0;
+      }
     }
 
     &__contact {
