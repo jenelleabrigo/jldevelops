@@ -12,14 +12,23 @@ html {
 }
 
 body {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  &.hide {
+    overflow: hidden;
+  }
 }
 
-h1, h2, h3, h4, h5, ul {
-    margin: 0;
-    padding: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 li {
@@ -27,15 +36,16 @@ li {
 }
 
 p {
-    margin: 0;
+  margin: 0;
 }
 
-dl, dd {
-    margin: 0;
+dl,
+dd {
+  margin: 0;
 }
 
 img {
-    border: 0;
-    vertical-align: top;
-    max-width: 100%;
+  border: 0;
+  vertical-align: top;
+  max-width: 100%;
 }
