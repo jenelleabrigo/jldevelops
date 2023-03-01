@@ -48,6 +48,16 @@ import shoppy_ecommerce_pink from "../assets/works/shoppy/ecommerce_pink.png";
 import shoppy_messages from "../assets/works/shoppy/messages.png";
 import shoppy_cart from "../assets/works/shoppy/cart.png";
 
+// eSHOPPY
+import eshoppy from "../assets/works/eshoppy/logo.png";
+import eshoppy_favicon from "../assets/works/eshoppy/favicon.png";
+import eshoppy_product_list from "../assets/works/eshoppy/product_list.png";
+import eshoppy_product_detail from "../assets/works/eshoppy/product_detail.png";
+import eshoppy_cart from "../assets/works/eshoppy/cart.jpg";
+import eshoppy_category from "../assets/works/eshoppy/category.jpg";
+import eshoppy_checkout from "../assets/works/eshoppy/checkout.png";
+import eshoppy_success from "../assets/works/eshoppy/success.png";
+
 export const projects = [
   {
     title: "Netflix Clone",
@@ -136,5 +146,27 @@ export const projects = [
     ],
     slides: [shoppy_ecommerce, shoppy_ecommerce_pink, shoppy_menu, shoppy_profile, shoppy_messages, shoppy_cart],
     link: "https://jl-dashboard-syncfusion.netlify.app/",
+  },
+  {
+    title: "eShoppy",
+    mainImg: eshoppy_favicon,
+    content:
+      "An e-commerce website that displays product list with different categories from api called fakestoreapi. This project used react as main , tailwind for styling, and redux for state management. Functions include ability to add an item to the cart and modify its quantity, see details of the item in separate page, summarize the added items in the cart, ability to checkout displaying the total amount of all added items, and displays success page upon checkout confirmation.",
+    techstack: [
+      {
+        name: "react",
+        icon: react,
+      },
+      {
+        name: "tailwind",
+        icon: tailwind,
+      },
+      {
+        name: "redux",
+        icon: redux,
+      },
+    ],
+    slides: [eshoppy, eshoppy_product_list, eshoppy_product_detail, eshoppy_cart, eshoppy_category, eshoppy_checkout, eshoppy_success],
+    link: "https://jl-eshoppy.onrender.com/",
   },
 ];
