@@ -9,6 +9,7 @@ import jquery from "../assets/common/techstack/jquery.png";
 import react from "../assets/common/techstack/react.png";
 import firebase from "../assets/common/techstack/firebase.png";
 import redux from "../assets/common/techstack/redux.png";
+import vue from "../assets/common/techstack/vue.png";
 import wordpress from "../assets/common/techstack/wordpress.png";
 import php from "../assets/common/techstack/php.png";
 import tailwind from "../assets/common/techstack/tailwind.png";

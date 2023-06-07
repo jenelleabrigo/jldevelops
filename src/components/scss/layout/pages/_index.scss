@@ -228,13 +228,23 @@
 
   &__journey {
     position: relative;
-    background: url("../../assets/index/bg-journey.png") no-repeat top center/cover;
+    background: url("../../assets/index/bg-journey.png") no-repeat top center/contain;
     padding: 150px 0;
     margin-top: -70px;
 
     @include mq_sp {
-      background: url("../../assets/index/sp_bg-journey.png") no-repeat top center/cover;
+      background: url("../../assets/index/sp_bg-journey.png") no-repeat top center/contain;
       padding: 100px 0 150px;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      height: calc(100% - 10rem);
+      width: 100%;
+      background: $primary;
+      bottom: 0;
+      z-index: -1;
     }
 
     &__inner {

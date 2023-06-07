@@ -55,4 +55,14 @@ export const journey = [
     content:
       "I started familiarizing myself with Nextjs by creating my own blog. After so much exposure to it and different projects, I decided to create a Leave Management app that could be helpful for the employees of my current company. I expanded my skills to backend development specifically CRUD operations to be able to achieve this. I used Nextjs, MongoDB, and Mongoose. It is still in progress though.",
   },
+  {
+    date: "MAY 2023",
+    content:
+      "Unfortunately, I wasn't able to finish the Leave Management app because of my schedule for the past months. But this month, I started watching a 4hrs tutorial of Vue js and it clicked differently, it's like it is something I wanted to pursue. From there, I started reading more of its documentation, learning some of its lilbraries/framework like vuetify, vuex, pinia, and vue-router. I even created a simple Leave management app with vue and simple CRUD using axios and json server. This time, I'm confident to create this using vue so I proposed this to my manager with a simple presentation and he was delighted with this idea so he gave me permission to proceed! I'm still in progress in creating the backend and database of this proposed project during my vacant times. I decided to go on with Laravel and mySQL since it is somehow similar with the company's proprietary PHP framework being used. ",
+  },
+  {
+    date: "JUNE 2023",
+    content:
+      "Since I'm very into vue js and aside from the leave management app I'm currently creating in company, I also started working on a personal project which is an admin dashboard that I might use in the near future. I'm working on its frontend and I have a partner assigned to the backend."
+  },
 ];

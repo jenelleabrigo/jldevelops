@@ -1,5 +1,5 @@
 import React from "react";
-import resume from "../../src/assets/pdf/jenelle-abrigo-resume_2022.pdf";
+import resume from "../../src/assets/pdf/jenelle-abrigo-resume_2023.pdf";
 
 const About = () => {
   return (
@@ -44,7 +44,8 @@ const About = () => {
                 <p className="p-about__inner__section__item__txt u-text is-small">LH & Creatives – Antel Corporate Centre Valero St, Salcedo Village, Makati City</p>
                 <p className="p-about__inner__section__item__txt u-text is-small">Web Developer mainly focusing on front-end works</p>
                 <dl className="p-about__inner__section__item__content">
-                  <dt className="p-about__inner__section__item__content__list u-text is-small">Implementation of Adobe XD or Illustrator designs into a functional and interactable websites</dt>
+                  <dt className="p-about__inner__section__item__content__list u-text is-small">Converting Adobe XD or Illustrator mockups into a functional and 
+responsive website</dt>
                   <dt className="p-about__inner__section__item__content__list u-text is-small">Creation of static and animated landing pages</dt>
                   <dt className="p-about__inner__section__item__content__list u-text is-small"> Maintenance and revisions of existing websites according to clients’ requirements</dt>
                   <dt className="p-about__inner__section__item__content__list u-text is-small"> Tech stack in use</dt>
@@ -102,7 +103,7 @@ const About = () => {
                       <p className="p-about__inner__section__item__content__list__detail no-margin u-text is-small">Wordpress</p>
                       <p className="p-about__inner__section__item__content__list__detail no-margin u-text is-small">jQuery</p>
                       <p className="p-about__inner__section__item__content__list__detail no-margin u-text is-small">React</p>
-                      <p className="p-about__inner__section__item__content__list__detail no-margin u-text is-small">Redux</p>
+                      <p className="p-about__inner__section__item__content__list__detail no-margin u-text is-small">Vue</p>
                       <p className="p-about__inner__section__item__content__list__detail no-margin u-text is-small">Solidity</p>
                       <p className="p-about__inner__section__item__content__list__detail no-margin u-text is-small">Ethereum/Web3.js</p>
                       {/* <p className="p-about__inner__section__item__content__list__detail no-margin u-text is-small">Bootstrap</p> */}
