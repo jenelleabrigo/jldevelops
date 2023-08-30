@@ -16,7 +16,7 @@ const Hero = () => {
           <p className="p-index__carousel__text2">
             I am a web developer with an experience of <br className="u-sp-only" />
             designing and developing.
-            <br /> <span></span>I create landing pages, web pages, <br className="u-sp-only" />forms, and animations.
+            <br /> <span></span>I create landing pages, web pages, <br className="u-sp-only" />forms, and animations
             <br />
             <span className="p-index__carousel__text2__span">WITH PASSION.</span>
           </p>
