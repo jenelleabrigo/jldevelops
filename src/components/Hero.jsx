@@ -14,11 +14,11 @@ const Hero = () => {
             <span className="p-index__carousel__text1__span2">JEN</span>.
           </p>
           <p className="p-index__carousel__text2">
-            A developer that loves <br className="u-sp-only" />
+            I am a web developer with an experience of <br className="u-sp-only" />
             designing and developing.
-            <br /> <span></span> Let me build your idea into reality for I am
+            <br /> <span></span>I create landing pages, web pages, <br className="u-sp-only" />forms, and animations.
             <br />
-            <span className="p-index__carousel__text2__span">YOUR DREAM DEVELOPER.</span>
+            <span className="p-index__carousel__text2__span">WITH PASSION.</span>
           </p>
           <Button />
         </div>
