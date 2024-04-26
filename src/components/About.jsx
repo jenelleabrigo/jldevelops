@@ -1,5 +1,5 @@
 import React from "react";
-import resume from "../../src/assets/pdf/jenelle-abrigo-resume_2023.pdf";
+import resume from "../../src/assets/pdf/jenelle-abrigo-resume_2024.pdf";
 
 const About = () => {
   return (
@@ -21,6 +21,9 @@ const About = () => {
                 <dl className="p-about__inner__section__item__content">
                   <dt className="p-about__inner__section__item__content__list u-text is-small">Deans Lister, 4 semesters</dt>
                   <dt className="p-about__inner__section__item__content__list u-text is-small">Officer, Institute of Electronics Engineers of the Philippines - National Student Chapter</dt>
+                  <dt className="p-about__inner__section__item__content__list u-text is-small">
+                    Member of Volleyball Team (School of Engineering and Architecture & Electronics and Communications Department)
+                  </dt>
                 </dl>
               </div>
               <div className="p-about__inner__section__item">
@@ -44,17 +47,28 @@ const About = () => {
                 <p className="p-about__inner__section__item__txt u-text is-small">LH & Creatives – Antel Corporate Centre Valero St, Salcedo Village, Makati City</p>
                 <p className="p-about__inner__section__item__txt u-text is-small">Web Developer mainly focusing on front-end works</p>
                 <dl className="p-about__inner__section__item__content">
-                  <dt className="p-about__inner__section__item__content__list u-text is-small">Converting Adobe XD or Illustrator mockups into a functional and 
-responsive website</dt>
+                  <dt className="p-about__inner__section__item__content__list u-text is-small">
+                    Converting Adobe XD or Illustrator mockups/designs into a fully-functional and responsive website ensuring cross-browser compatibility and adhering to SEO principles.
+                  </dt>
                   <dt className="p-about__inner__section__item__content__list u-text is-small">Creation of static and animated landing pages</dt>
-                  <dt className="p-about__inner__section__item__content__list u-text is-small"> Maintenance and revisions of existing websites according to clients’ requirements</dt>
-                  <dt className="p-about__inner__section__item__content__list u-text is-small"> Tech stack in use</dt>
-                  <dd className="p-about__inner__section__item__content__list__detail u-text is-small">HTML</dd>
-                  <dd className="p-about__inner__section__item__content__list__detail u-text is-small">CSS</dd>
+                  <dt className="p-about__inner__section__item__content__list u-text is-small">
+                    Performing maintenance tasks and implementing revisions on existing websites in alignment with client specifications and preferences.
+                  </dt>
+                  <dt className="p-about__inner__section__item__content__list u-text is-small">Skills and tech stack in use</dt>
+                  <dd className="p-about__inner__section__item__content__list__detail u-text is-small">HTML5</dd>
+                  <dd className="p-about__inner__section__item__content__list__detail u-text is-small">CSS3</dd>
                   <dd className="p-about__inner__section__item__content__list__detail u-text is-small">SASS/SCSS</dd>
+                  <dd className="p-about__inner__section__item__content__list__detail u-text is-small">Javascript</dd>
                   <dd className="p-about__inner__section__item__content__list__detail u-text is-small">PHP</dd>
                   <dd className="p-about__inner__section__item__content__list__detail u-text is-small">Wordpress</dd>
-                  <dt className="p-about__inner__section__item__content__list u-text is-small">Layout, code, and specifications checking of teammates work</dt>
+                  <dd className="p-about__inner__section__item__content__list__detail u-text is-small">Jquery</dd>
+                  <dd className="p-about__inner__section__item__content__list__detail u-text is-small">CMS</dd>
+                  <dd className="p-about__inner__section__item__content__list__detail u-text is-small">Animations</dd>
+                  <dt className="p-about__inner__section__item__content__list u-text is-small">Conducting manual testing and debugging to assess layout, code, and adherence to specifications.</dt>
+                  <dt className="p-about__inner__section__item__content__list u-text is-small">
+                    <strong>Recognized Achievement:</strong> Initiated the conceptualization and development of an in-house project tailored to company needs: Designed and executed a Leave Manager
+                    App.
+                  </dt>
                 </dl>
               </div>
               <div className="p-about__inner__section__item">
@@ -69,12 +83,12 @@ responsive website</dt>
                   <dt className="p-about__inner__section__item__content__list u-text is-small">Process Evaluations</dt>
                   <dt className="p-about__inner__section__item__content__list u-text is-small">Product Verifications</dt>
                   <dt className="p-about__inner__section__item__content__list u-text is-small">Process Improvements</dt>
-                  <dd className="p-about__inner__section__item__content__list__detail u-text is-small">
-                    Recognized Project: Able to improve UPH for Marking Process of 18% increase with providing solutions from data driven analysis.
-                  </dd>
                   <dt className="p-about__inner__section__item__content__list u-text is-small">Data Analysis and Yield Monitoring</dt>
                   <dt className="p-about__inner__section__item__content__list u-text is-small">Root Cause investigation and Corrective Actions production (RCCA)</dt>
                   <dt className="p-about__inner__section__item__content__list u-text is-small">Process machines operation</dt>
+                  <dt className="p-about__inner__section__item__content__list u-text is-small">
+                    <strong>Recognized Achievement:</strong> Improved UPH for Marking Process of 18% increase with solutions from data driven analysis
+                  </dt>
                 </dl>
               </div>
               <div className="p-about__inner__section__item">
@@ -91,36 +105,31 @@ responsive website</dt>
               <h2 className="p-about__inner__section__heading">Skills and Traits</h2>
               <div className="p-about__inner__section__item">
                 <ul className="p-about__inner__section__item__content">
-                  <li className="p-about__inner__section__item__content__list u-text is-small">Computer Literate</li>
-                  <li className="p-about__inner__section__item__content__list u-text is-small">Hands-on experience with lab equipment</li>
+                  <li className="p-about__inner__section__item__content__list u-text is-small">Proficient in computer skills</li>
+                  <li className="p-about__inner__section__item__content__list u-text is-small">Practical experience with laboratory equipment</li>
                   <li className="p-about__inner__section__item__content__list u-text is-small">
-                    Knowledge in using:
+                    Web development: landing page, website and web applications
                     <div className="p-about__inner__section__item__content__list__grid">
-                      <p className="p-about__inner__section__item__content__list__detail no-margin u-text is-small">HTML</p>
-                      <p className="p-about__inner__section__item__content__list__detail no-margin u-text is-small">CSS/SCSS</p>
+                      <p className="p-about__inner__section__item__content__list__detail no-margin u-text is-small">HTML5</p>
+                      <p className="p-about__inner__section__item__content__list__detail no-margin u-text is-small">CSS3/SCSS/SASS</p>
                       <p className="p-about__inner__section__item__content__list__detail no-margin u-text is-small">Tailwind</p>
                       <p className="p-about__inner__section__item__content__list__detail no-margin u-text is-small">Javascript</p>
                       <p className="p-about__inner__section__item__content__list__detail no-margin u-text is-small">Wordpress</p>
                       <p className="p-about__inner__section__item__content__list__detail no-margin u-text is-small">jQuery</p>
-                      <p className="p-about__inner__section__item__content__list__detail no-margin u-text is-small">React</p>
-                      <p className="p-about__inner__section__item__content__list__detail no-margin u-text is-small">Vue</p>
-                      <p className="p-about__inner__section__item__content__list__detail no-margin u-text is-small">Solidity</p>
-                      <p className="p-about__inner__section__item__content__list__detail no-margin u-text is-small">Ethereum/Web3.js</p>
-                      {/* <p className="p-about__inner__section__item__content__list__detail no-margin u-text is-small">Bootstrap</p> */}
-                      {/* <p className="p-about__inner__section__item__content__list__detail no-margin u-text is-small">MySQL</p> */}
-                      {/* <p className="p-about__inner__section__item__content__list__detail no-margin u-text is-small">AutoCAD</p> */}
-                      <p className="p-about__inner__section__item__content__list__detail no-margin u-text is-small">Adobe Photoshop</p>
-                      <p className="p-about__inner__section__item__content__list__detail no-margin u-text is-small">Adobe Illustrator</p>
-                      <p className="p-about__inner__section__item__content__list__detail no-margin u-text is-small">Adobe XD</p>
-                      <p className="p-about__inner__section__item__content__list__detail no-margin u-text is-small">Microsoft Office</p>
-                      {/* <p className="p-about__inner__section__item__content__list__detail no-margin u-text is-small">Minitab</p> */}
+                      <p className="p-about__inner__section__item__content__list__detail no-margin u-text is-small">Git</p>
+                      <p className="p-about__inner__section__item__content__list__detail no-margin u-text is-small">React JS</p>
+                      <p className="p-about__inner__section__item__content__list__detail no-margin u-text is-small">Vue JS</p>
+                      <p className="p-about__inner__section__item__content__list__detail no-margin u-text is-small">CMS</p>
+                      <p className="p-about__inner__section__item__content__list__detail no-margin u-text is-small">SEO</p>
+                      <p className="p-about__inner__section__item__content__list__detail no-margin u-text is-small">Animations</p>
+                      <p className="p-about__inner__section__item__content__list__detail no-margin u-text is-small">Adobe Suits</p>
                     </div>
                   </li>
                   <li className="p-about__inner__section__item__content__list u-text is-small">English fluent in verbal and written</li>
-                  <li className="p-about__inner__section__item__content__list u-text is-small">Willing to learn</li>
-                  <li className="p-about__inner__section__item__content__list u-text is-small">Responsible and hardworking</li>
-                  <li className="p-about__inner__section__item__content__list u-text is-small">Self-starter</li>
-                  <li className="p-about__inner__section__item__content__list u-text is-small">Attention to detail</li>
+                  <li className="p-about__inner__section__item__content__list u-text is-small">Strong enthusiasm for acquiring new technology stacks</li>
+                  <li className="p-about__inner__section__item__content__list u-text is-small">Diligent and reliable</li>
+                  <li className="p-about__inner__section__item__content__list u-text is-small">Initiative-driven</li>
+                  <li className="p-about__inner__section__item__content__list u-text is-small">Attentive to detail</li>
                 </ul>
               </div>
             </div>

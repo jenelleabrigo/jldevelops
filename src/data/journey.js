@@ -63,6 +63,27 @@ export const journey = [
   {
     date: "JUNE 2023",
     content:
-      "Since I'm very into vue js and aside from the leave management app I'm currently creating in company, I also started working on a personal project which is an admin dashboard that I might use in the near future. I'm working on its frontend and I have a partner assigned to the backend."
+      "Since I'm very into vue js and aside from the leave management app I'm currently creating in company, I also started working on a personal project which is an admin dashboard that I might use in the near future. I'm working on its frontend and I have a partner assigned to the backend.",
+  },
+  {
+    date: "JULY 2023",
+    content: "Got my 1st landing page project as a freelancer! It is entitle LabGenius.",
+  },
+  {
+    date: "OCTOBER 2023",
+    content: "2nd project as a freelancer! This time, it's a web application react based project - TempEnsure. Working with other developers cause this is a biiig one!",
+  },
+  {
+    date: "NOVEMBER 2023",
+    content:
+      "Finally! I was able to achieve my set goal when I entered in the company - be innovative and contribute something for company's use. I finished building the Leave Manager App enabling employees to efficiently track and submit leave requests. The system, equipped with administrative functionalities, allows designated users to manage leave requests seamlessly, including approval and rejection processes. Additional features encompassed announcement dissemination, employee database management, and the provision for downloading leave history in CSV format. Leveraged Laravel and Vue.js frameworks to realize this robust application.",
+  },
+  {
+    date: "DECEMBER 2023",
+    content: "During our Christmas Party, the Leave Manager App I built was given recognition.",
+  },
+  {
+    date: "JANUARY 2024",
+    content: "Leave Manager App now in use!!!",
   },
 ];
