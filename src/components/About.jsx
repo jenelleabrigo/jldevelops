@@ -44,7 +44,7 @@ const About = () => {
               <div className="p-about__inner__section__item">
                 <h3 className="p-about__inner__section__item__title u-text is-big">
                   Web Developer <br className="u-sp-only" />
-                  (October 2021-Present)
+                  (October 2021-June 2025)
                 </h3>
                 <p className="p-about__inner__section__item__txt u-text is-small">LH & Creatives – Antel Corporate Centre Valero St, Salcedo Village, Makati City</p>
                 <p className="p-about__inner__section__item__txt u-text is-small">Web Developer mainly focusing on front-end works</p>
@@ -119,12 +119,12 @@ const About = () => {
                       <p className="p-about__inner__section__item__content__list__detail no-margin u-text is-small">Wordpress</p>
                       <p className="p-about__inner__section__item__content__list__detail no-margin u-text is-small">jQuery</p>
                       <p className="p-about__inner__section__item__content__list__detail no-margin u-text is-small">Git</p>
-                      <p className="p-about__inner__section__item__content__list__detail no-margin u-text is-small">React JS</p>
                       <p className="p-about__inner__section__item__content__list__detail no-margin u-text is-small">Vue JS</p>
                       <p className="p-about__inner__section__item__content__list__detail no-margin u-text is-small">CMS</p>
                       <p className="p-about__inner__section__item__content__list__detail no-margin u-text is-small">SEO</p>
                       <p className="p-about__inner__section__item__content__list__detail no-margin u-text is-small">Animations</p>
                       <p className="p-about__inner__section__item__content__list__detail no-margin u-text is-small">Adobe Suits</p>
+                      <p className="p-about__inner__section__item__content__list__detail no-margin u-text is-small">AB Testing tools (VWO, Mutiny, Optimizely)</p>
                     </div>
                   </li>
                   <li className="p-about__inner__section__item__content__list u-text is-small">English fluent in verbal and written</li>
