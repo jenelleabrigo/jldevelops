@@ -7,12 +7,16 @@ import sass from "../assets/common/techstack/sass.png";
 import js from "../assets/common/techstack/js.png";
 import jquery from "../assets/common/techstack/jquery.png";
 import react from "../assets/common/techstack/react.png";
+import firebase from "../assets/common/techstack/firebase.png";
+import redux from "../assets/common/techstack/redux.png";
+import vue from "../assets/common/techstack/vue.png";
 import wordpress from "../assets/common/techstack/wordpress.png";
 import php from "../assets/common/techstack/php.png";
 import tailwind from "../assets/common/techstack/tailwind.png";
 import next from "../assets/common/techstack/next.png";
 import ethereum from "../assets/common/techstack/ethereum.png";
 import solidity from "../assets/common/techstack/solidity.png";
+import syncfusion from "../assets/common/techstack/syncfusion.png";
 
 // NETFLIX_CLONE
 import netflix from "../assets/works/netflix/netflix.png";
@@ -36,6 +40,25 @@ import krypt_wallet from "../assets/works/krypt/wallet.jpg";
 import krypt_form from "../assets/works/krypt/transaction_form.jpg";
 import krypt_record from "../assets/works/krypt/transaction_record.jpg";
 
+// SHOPPY
+import shoppy from "../assets/works/shoppy/logo.svg";
+import shoppy_menu from "../assets/works/shoppy/menu.png";
+import shoppy_profile from "../assets/works/shoppy/profile.png";
+import shoppy_ecommerce from "../assets/works/shoppy/ecommerce.png";
+import shoppy_ecommerce_pink from "../assets/works/shoppy/ecommerce_pink.png";
+import shoppy_messages from "../assets/works/shoppy/messages.png";
+import shoppy_cart from "../assets/works/shoppy/cart.png";
+
+// eSHOPPY
+import eshoppy from "../assets/works/eshoppy/logo.png";
+import eshoppy_favicon from "../assets/works/eshoppy/favicon.png";
+import eshoppy_product_list from "../assets/works/eshoppy/product_list.png";
+import eshoppy_product_detail from "../assets/works/eshoppy/product_detail.png";
+import eshoppy_cart from "../assets/works/eshoppy/cart.jpg";
+import eshoppy_category from "../assets/works/eshoppy/category.jpg";
+import eshoppy_checkout from "../assets/works/eshoppy/checkout.png";
+import eshoppy_success from "../assets/works/eshoppy/success.png";
+
 export const projects = [
   {
     title: "Netflix Clone",
@@ -50,6 +73,10 @@ export const projects = [
       {
         name: "sass",
         icon: sass,
+      },
+      {
+        name: "firebase",
+        icon: firebase,
       },
     ],
     slides: [netflix_landing, netflix_sign_up, netflix_sign_in, netflix_home, netflix_feature, netflix_trailer],
@@ -98,5 +125,49 @@ export const projects = [
     ],
     slides: [krypt_logout, krypt_login, krypt_wallet, krypt_form, krypt_record],
     link: "https://jl-krypt.vercel.app/",
+  },
+  {
+    title: "Shoppy",
+    mainImg: shoppy,
+    content:
+      "A dashboard sample using Syncfusion library which offers a very responsive and lightweight components for modern web applications such as charts, kanban, calendar, editor, and color-picker. This project was made together with a tutorial from JSMastery. This also uses react context for easy access to state and methods in different pages of the project. One wonderful feature of this dashboard is the ability to reflect chosen mode and theme color by the user and retain this by the use of local storage.",
+    techstack: [
+      {
+        name: "react",
+        icon: react,
+      },
+      {
+        name: "tailwind",
+        icon: tailwind,
+      },
+      {
+        name: "syncfusion",
+        icon: syncfusion,
+      },
+    ],
+    slides: [shoppy_ecommerce, shoppy_ecommerce_pink, shoppy_menu, shoppy_profile, shoppy_messages, shoppy_cart],
+    link: "https://jl-dashboard-syncfusion.netlify.app/",
+  },
+  {
+    title: "eShoppy",
+    mainImg: eshoppy_favicon,
+    content:
+      "An e-commerce website that displays product list with different categories from api called fakestoreapi. This project used react as main , tailwind for styling, and redux for state management. Functions include ability to add an item to the cart and modify its quantity, see details of the item in separate page, summarize the added items in the cart, ability to checkout displaying the total amount of all added items, and displays success page upon checkout confirmation.",
+    techstack: [
+      {
+        name: "react",
+        icon: react,
+      },
+      {
+        name: "tailwind",
+        icon: tailwind,
+      },
+      {
+        name: "redux",
+        icon: redux,
+      },
+    ],
+    slides: [eshoppy, eshoppy_product_list, eshoppy_product_detail, eshoppy_cart, eshoppy_category, eshoppy_checkout, eshoppy_success],
+    link: "https://jl-eshoppy.onrender.com/",
   },
 ];

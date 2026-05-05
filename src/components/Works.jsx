@@ -22,10 +22,15 @@ const ProjectItem = (item) => {
   const [toggleModal, setToggleModal] = useState(false);
   console.log(toggleModal);
 
+  const openModal = () => {
+    setToggleModal((current) => !current);
+    document.body.classList.add("hide");
+  };
+
   return (
     <>
       {toggleModal ? <Modal toggleModal={toggleModal} setToggleModal={setToggleModal} item={item} /> : ""}
-      <div className="p-index__works__inner__item-container" onClick={() => setToggleModal((current) => !current)}>
+      <div className="p-index__works__inner__item-container" onClick={openModal}>
         <div className="p-index__works__inner__item">
           <div className="p-index__works__inner__item__img-container">
             <img src={item.mainImg} alt={item.mainImg} className="p-index__works__inner__item__img-container__img" />

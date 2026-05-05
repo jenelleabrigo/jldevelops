@@ -55,4 +55,39 @@ export const journey = [
     content:
       "I started familiarizing myself with Nextjs by creating my own blog. After so much exposure to it and different projects, I decided to create a Leave Management app that could be helpful for the employees of my current company. I expanded my skills to backend development specifically CRUD operations to be able to achieve this. I used Nextjs, MongoDB, and Mongoose. It is still in progress though.",
   },
+  {
+    date: "MAY 2023",
+    content:
+      "Unfortunately, I wasn't able to finish the Leave Management app because of my schedule for the past months. But this month, I started watching a 4hrs tutorial of Vue js and it clicked differently, it's like it is something I wanted to pursue. From there, I started reading more of its documentation, learning some of its lilbraries/framework like vuetify, vuex, pinia, and vue-router. I even created a simple Leave management app with vue and simple CRUD using axios and json server. This time, I'm confident to create this using vue so I proposed this to my manager with a simple presentation and he was delighted with this idea so he gave me permission to proceed! I'm still in progress in creating the backend and database of this proposed project during my vacant times. I decided to go on with Laravel and mySQL since it is somehow similar with the company's proprietary PHP framework being used. ",
+  },
+  {
+    date: "JUNE 2023",
+    content:
+      "Since I'm very into vue js and aside from the leave management app I'm currently creating in company, I also started working on a personal project which is an admin dashboard that I might use in the near future. I'm working on its frontend and I have a partner assigned to the backend.",
+  },
+  {
+    date: "JULY 2023",
+    content: "Got my 1st landing page project as a freelancer! It is entitle LabGenius.",
+  },
+  {
+    date: "OCTOBER 2023",
+    content: "2nd project as a freelancer! This time, it's a web application react based project - TempEnsure. Working with other developers cause this is a biiig one!",
+  },
+  {
+    date: "NOVEMBER 2023",
+    content:
+      "Finally! I was able to achieve my set goal when I entered in the company - be innovative and contribute something for company's use. I finished building the Leave Manager App enabling employees to efficiently track and submit leave requests. The system, equipped with administrative functionalities, allows designated users to manage leave requests seamlessly, including approval and rejection processes. Additional features encompassed announcement dissemination, employee database management, and the provision for downloading leave history in CSV format. Leveraged Laravel and Vue.js frameworks to realize this robust application.",
+  },
+  {
+    date: "DECEMBER 2023",
+    content: "During our Christmas Party, the Leave Manager App I built was given recognition.",
+  },
+  {
+    date: "JANUARY 2024",
+    content: "Leave Manager App now in use!!!",
+  },
+  {
+    date: "JUNE 2025",
+    content: "I started working in Spiralyze - a big company that focuses on Conversion Rate Optimization (CRO) services and A/B Testing. New environment, new learnings!",
+  },
 ];

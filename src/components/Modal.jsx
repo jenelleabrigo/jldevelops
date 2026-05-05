@@ -6,9 +6,14 @@ import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper";
 
 function Modal({ toggleModal, setToggleModal, item }) {
+  const closeModal = () => {
+    setToggleModal((current) => !current);
+    document.body.classList.remove("hide");
+  };
+
   return (
     <div className="c-modal">
-      <div className="c-modal__close" onClick={() => setToggleModal((current) => !current)}></div>
+      <div className="c-modal__close" onClick={closeModal}></div>
       <div className="c-modal__content">
         <div className="">
           <p className="c-modal__content__title u-text is-big is-pink u-font-serif">{item.title}</p>
@@ -23,23 +28,6 @@ function Modal({ toggleModal, setToggleModal, item }) {
         </a>
         <p className="c-modal__content__text">{item.content}</p>
         <div className="c-modal__content__slide">
-          {/* <Splide
-            options={{
-              loop: true,
-              gap: "1rem",
-              perPage: 1,
-              perMove: 1,
-              height: "auto",
-              autoHeight: true,
-            }}
-            aria-label="My Favorite Images"
-          >
-            {item.slides?.map((img, index) => (
-              <SplideSlide key={index}>
-                <img src={img} alt={item.title} />
-              </SplideSlide>
-            ))}
-          </Splide> */}
           <Swiper
             autoHeight={true}
             spaceBetween={20}
