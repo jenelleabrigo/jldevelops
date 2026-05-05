@@ -86,4 +86,8 @@ export const journey = [
     date: "JANUARY 2024",
     content: "Leave Manager App now in use!!!",
   },
+  {
+    date: "JUNE 2025",
+    content: "I started working in Spiralyze - a big company that focuses on Conversion Rate Optimization (CRO) services and A/B Testing. New environment, new learnings!",
+  },
 ];

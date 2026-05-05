@@ -1,5 +1,5 @@
 import React from "react";
-import resume from "../../src/assets/pdf/jenelle-abrigo-resume_2024.pdf";
+// import resume from "../../src/assets/pdf/jenelle-abrigo-resume_2024.pdf";
 
 const About = () => {
   return (
@@ -7,38 +7,40 @@ const About = () => {
       <section className="p-about">
         <div className="u-layout">
           <div className="p-about__inner">
-            <a download="Jenelle Loise Abrigo Resume" href={resume} className="p-about__inner__resume c-button is-pink">
+            {/* <a download="Jenelle Loise Abrigo Resume" href={resume} className="p-about__inner__resume c-button is-pink">
               Download Formal Resume
-            </a>
-
-            <div className="p-about__inner__section">
-              <h2 className="p-about__inner__section__heading">Education</h2>
-              <div className="p-about__inner__section__item">
-                <h3 className="p-about__inner__section__item__title u-text is-big">TERTIARY (2014-2019)</h3>
-                <p className="p-about__inner__section__item__txt u-text is-small">Bachelor of Science in Electronics Engineering</p>
-                <p className="p-about__inner__section__item__txt u-text is-small">Saint Louis University</p>
-                <p className="p-about__inner__section__item__txt u-text is-small">Baguio City</p>
-                <dl className="p-about__inner__section__item__content">
-                  <dt className="p-about__inner__section__item__content__list u-text is-small">Deans Lister, 4 semesters</dt>
-                  <dt className="p-about__inner__section__item__content__list u-text is-small">Officer, Institute of Electronics Engineers of the Philippines - National Student Chapter</dt>
-                  <dt className="p-about__inner__section__item__content__list u-text is-small">
-                    Member of Volleyball Team (School of Engineering and Architecture & Electronics and Communications Department)
-                  </dt>
-                </dl>
-              </div>
-              <div className="p-about__inner__section__item">
-                <h3 className="p-about__inner__section__item__title u-text is-big">SECONDARY (2009-2014)</h3>
-                <p className="p-about__inner__section__item__txt u-text is-small">Cordillera Career Development College</p>
-                <p className="p-about__inner__section__item__txt u-text is-small">La Trinidad, Benguet</p>
-                <dl className="p-about__inner__section__item__content">
-                  <dt className="p-about__inner__section__item__content__list u-text is-small">Officer, Student Supreme Government</dt>
-                  <dt className="p-about__inner__section__item__content__list u-text is-small">Active in extracurricular activities like department dance troupe and volleyball team.</dt>
-                </dl>
-              </div>
-            </div>
+            </a> */}
 
             <div className="p-about__inner__section">
               <h2 className="p-about__inner__section__heading">Experience</h2>
+              <div className="p-about__inner__section__item">
+                <h3 className="p-about__inner__section__item__title u-text is-big">
+                  Frontend Web Developer <br className="u-sp-only" />
+                  (June 2025-Present)
+                </h3>
+                <p className="p-about__inner__section__item__txt u-text is-small">Spiralyze - Atlanta, Georgia</p>
+                <p className="p-about__inner__section__item__txt u-text is-small">
+                  Web Developer mainly focusing on front-end works specializing in creating and optimizing multiple website versions for A/B testing and Conversion Rate Optimization (CRO)
+                </p>
+                <dl className="p-about__inner__section__item__content">
+                  <dt className="p-about__inner__section__item__content__list u-text is-small">Develop and deploy multiple versions of web pages for A/B and multivariate testing</dt>
+                  <dt className="p-about__inner__section__item__content__list u-text is-small">Collaborate with designers and CRO strategists to ensure accurate design-to-code translation</dt>
+                  <dt className="p-about__inner__section__item__content__list u-text is-small">
+                    Performing maintenance tasks and implementing revisions on existing websites in alignment with client specifications and preferences.
+                  </dt>
+                  <dt className="p-about__inner__section__item__content__list u-text is-small">Skills and tech stack in use</dt>
+                  <dd className="p-about__inner__section__item__content__list__detail u-text is-small">HTML5</dd>
+                  <dd className="p-about__inner__section__item__content__list__detail u-text is-small">CSS3</dd>
+                  <dd className="p-about__inner__section__item__content__list__detail u-text is-small">SASS/SCSS</dd>
+                  <dd className="p-about__inner__section__item__content__list__detail u-text is-small">Javascript</dd>
+                  <dd className="p-about__inner__section__item__content__list__detail u-text is-small">VWO</dd>
+                  <dd className="p-about__inner__section__item__content__list__detail u-text is-small">Mutiny</dd>
+                  <dd className="p-about__inner__section__item__content__list__detail u-text is-small">Optimizely</dd>
+                  <dt className="p-about__inner__section__item__content__list u-text is-small">Conduct manual QA testing on personal work and peer deliverables to maintain quality standards</dt>
+                  <dt className="p-about__inner__section__item__content__list u-text is-small">Optimize frontend performance and ensure cross-browser compatibility</dt>
+                  <dt className="p-about__inner__section__item__content__list u-text is-small">Deliver pixel-perfect, high-converting web experiences that improve client CRO metrics</dt>
+                </dl>
+              </div>
               <div className="p-about__inner__section__item">
                 <h3 className="p-about__inner__section__item__title u-text is-big">
                   Web Developer <br className="u-sp-only" />
@@ -131,6 +133,32 @@ const About = () => {
                   <li className="p-about__inner__section__item__content__list u-text is-small">Initiative-driven</li>
                   <li className="p-about__inner__section__item__content__list u-text is-small">Attentive to detail</li>
                 </ul>
+              </div>
+            </div>
+
+            <div className="p-about__inner__section">
+              <h2 className="p-about__inner__section__heading">Education</h2>
+              <div className="p-about__inner__section__item">
+                <h3 className="p-about__inner__section__item__title u-text is-big">TERTIARY (2014-2019)</h3>
+                <p className="p-about__inner__section__item__txt u-text is-small">Bachelor of Science in Electronics Engineering</p>
+                <p className="p-about__inner__section__item__txt u-text is-small">Saint Louis University</p>
+                <p className="p-about__inner__section__item__txt u-text is-small">Baguio City</p>
+                <dl className="p-about__inner__section__item__content">
+                  <dt className="p-about__inner__section__item__content__list u-text is-small">Deans Lister, 4 semesters</dt>
+                  <dt className="p-about__inner__section__item__content__list u-text is-small">Officer, Institute of Electronics Engineers of the Philippines - National Student Chapter</dt>
+                  <dt className="p-about__inner__section__item__content__list u-text is-small">
+                    Member of Volleyball Team (School of Engineering and Architecture & Electronics and Communications Department)
+                  </dt>
+                </dl>
+              </div>
+              <div className="p-about__inner__section__item">
+                <h3 className="p-about__inner__section__item__title u-text is-big">SECONDARY (2009-2014)</h3>
+                <p className="p-about__inner__section__item__txt u-text is-small">Cordillera Career Development College</p>
+                <p className="p-about__inner__section__item__txt u-text is-small">La Trinidad, Benguet</p>
+                <dl className="p-about__inner__section__item__content">
+                  <dt className="p-about__inner__section__item__content__list u-text is-small">Officer, Student Supreme Government</dt>
+                  <dt className="p-about__inner__section__item__content__list u-text is-small">Active in extracurricular activities like department dance troupe and volleyball team.</dt>
+                </dl>
               </div>
             </div>
           </div>
